@@ -1,0 +1,106 @@
+body {
+    background-color:rgba(204,204,204,255);
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'helvetica_neuelight';
+    src: url('helveticaneuelight-webfont.woff2') format('woff2'),
+         url('helveticaneuelight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.hero{
+    background-image: url("website.png");
+    margin-top: -7%;
+    background-position: center -25px;
+    background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;     /* full screen height */
+  text-align: center;
+  color: white;
+  font-family: 'Impact', 'Anton', sans-serif; /* use a bold font */
+
+}
+
+@media (max-width: 1100px) {
+  .hero {
+    background-size: cover; /* much better on mobile */
+    background-position: center top; /* you can tweak this */
+  }
+}
+
+
+.hero h1 {
+  font-size: clamp(55px, 8vw, 115px);
+  margin-top:0px;
+  font-weight: normal;
+  position: center;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.hero p {
+  font-size: clamp(15px, 4vw,  75px);
+  font-weight: normal;
+  letter-spacing: 1px;  
+  font-feature-settings: "ss02" 1;
+  font-feature-settings: "ss01" 1;
+}
+
+.about h2 {
+      font-family: 'Impact', 'Anton', sans-serif; /* use a bold font */
+  font-size: clamp(45px, 4vw,  115px);
+  margin-right: 5%;
+  margin-top:0px;
+  font-weight: normal;
+  margin-left: 15%;
+  color: black;
+    text-align: right;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.feel {
+  font-family: "helvetica_neuelight";
+  font-size: clamp(15px, 2vw,  25px);
+  font-weight: light;
+  letter-spacing: 1px;  
+  font-feature-settings: "ss02" 1;
+  font-feature-settings: "ss01" 1;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.current {
+  font-family: "helvetica_neuelight";
+  font-size: clamp(15px, 2vw,  25px);
+  font-weight: light;
+  letter-spacing: 1px;  
+  font-feature-settings: "ss02" 1;
+  font-feature-settings: "ss01" 1;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.lab {
+  font-family: "helvetica_neuelight";
+  font-size: clamp(15px, 2vw,  25px);
+  font-weight: light;
+  letter-spacing: 1px;  
+  font-feature-settings: "ss02" 1;
+  font-feature-settings: "ss01" 1;
+  margin-right: 15%;
+  margin-left: 15%;
+}
