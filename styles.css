@@ -16,7 +16,7 @@ body {
 
 .hero{
     background-image: url("website.png");
-    margin-top: -7%;
+
     background-position: center -25px;
     background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  height: 100vh;     /* full screen height */
+  height: 100vh; 
   text-align: center;
   color: white;
   font-family: 'Impact', 'Anton', sans-serif; /* use a bold font */
@@ -36,7 +36,7 @@ body {
 @media (max-width: 1100px) {
   .hero {
     background-size: cover; /* much better on mobile */
-    background-position: center top; /* you can tweak this */
+    background-position: center; /* you can tweak this */
   }
 }
 
@@ -103,4 +103,34 @@ body {
   font-feature-settings: "ss01" 1;
   margin-right: 15%;
   margin-left: 15%;
+}
+
+.chaos {
+      background-image: url("bruhwebsite.png");
+    background-position: center;
+    background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;     /* full screen height */
+  color: white;
+  font-family: 'Impact', 'Anton', sans-serif; /* use a bold font */
+}
+
+@media (max-width: 1100px) {
+  .chaos {
+    background-size: cover; /* much better on mobile */
+    background-position: center; /* you can tweak this */
+  }
+}
+.chaos h2 {
+      font-family: 'Impact', 'Anton', sans-serif; /* use a bold font */
+  font-size: clamp(45px, 5vw,  120px);
+  margin-top: 65px;
+  font-weight: normal;
+  margin-left: 25px;
+  color: rgb(255, 255, 255);
+    text-align: left;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
